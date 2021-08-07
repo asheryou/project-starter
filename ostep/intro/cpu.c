@@ -17,3 +17,6 @@ int main(int argc, char *argv[]){
     }
     return 0;
 }
+
+// 观察时分，在Bash下执行该程序——
+// ./cpu A & ./cpu B & ./cpu C & ./cpu D &

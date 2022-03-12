@@ -2,18 +2,18 @@
 
 /* Presets */
 :root {
-	--font-sans-serif: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+	--font-main: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI',
 		'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue',
 		Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
 		'Segoe UI Symbol';
-	--font-serif: Georgia, 'Source Han Serif SC', STZhongsong, 'Times New Roman',
+	--font-special: Georgia, 'Source Han Serif SC', STZhongsong, 'Times New Roman',
 		Times, PMingLiu, STSong, SimSun, 'WenQuanYi Bitmap Song', 'Noto Serif CJK',
 		serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-	--font-mono: JetBrainsMono, 'Source Code Pro', Monaco, Menlo, Consolas,
+	--font-code: JetBrainsMono, 'Source Code Pro', Monaco, Menlo, Consolas,
 		'Courier New', Courier, monospace;
 
-	--color-primary: #9ba5b5;
-	--color-secondary: #122738;
+	--color-primary: #000;
+	--color-secondary: #fff;
 	--color-dark: #333;
 	--color-light: #f4f4f4;
 	--color-success: #5cb85c;
@@ -21,9 +21,9 @@
 }
 
 body {
-	background-color: var(--color-primary);
-	font-family: var(--font-sans-serif);
-	height: 100vh;
+	background-color: var(--color-secondary);
+	font-family: var(--font-main);
+	height: 100%;
 	margin: 0;
 }
 
@@ -33,7 +33,7 @@ ul {
 
 a {
 	text-decoration: none;
-	color: var(--color-light);
+	color: var(--color-primary);
 }
 
 p {
@@ -58,49 +58,4 @@ img {
 	align-items: center;
 	justify-content: center;
 	overflow: hidden;
-}
-
-/* Main */
-
-/* index.html */
-.title {
-	text-align: center;
-	color: var(--color-light);
-}
-
-.content {
-	margin-top: 30vh;
-}
-
-.nav-overlay {
-	position: absolute;
-	top: 0;
-	z-index: -1;
-	background-color: var(--color-secondary);
-	opacity: 0.6;
-	width: 100%;
-	height: 70px;
-}
-
-.navbar {
-	color: var(--color-light);
-	height: 70px;
-	width: 100%;
-}
-
-.navbar.flex {
-	justify-content: space-between;
-}
-
-nav a {
-	padding: 10px;
-	margin: 0 5px;
-}
-
-.bar-list:hover > .bar-item {
-	opacity: 0.6;
-}
-
-.bar-list:hover > .bar-item:hover {
-	opacity: 1;
 }

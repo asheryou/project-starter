@@ -1,4 +1,5 @@
 .vscode/
+*-lock.json
 
 # ==========
 # 1. Node
